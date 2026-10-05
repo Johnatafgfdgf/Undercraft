@@ -1,0 +1,23 @@
+# Original game files - never commit
+data.win
+UNDERTALE.exe
+*.ogg
+*.wav
+*.dat
+
+# Local game copies / build outputs
+game/
+input/
+output/
+build/
+dist/
+backups/
+*.bak
+*.tmp
+
+# Tool caches
+__pycache__/
+*.pyc
+.venv/
+.vscode/
+.idea/
