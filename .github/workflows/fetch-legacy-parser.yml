@@ -1,10 +1,10 @@
 name: Fetch legacy parser
 
 on:
-  push:
-    paths:
-      - ".github/workflows/fetch-legacy-parser.yml"
   workflow_dispatch:
+  pull_request:
+    paths:
+      - "tools/legacy-parser-trigger.txt"
 
 jobs:
   fetch:
