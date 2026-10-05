@@ -1,0 +1,11 @@
+{
+  "name": "Undercraft",
+  "project_version": "0.0.1-dev",
+  "host_game": "UNDERTALE",
+  "guest_inspiration": "Minecraft",
+  "distribution": "patch-only",
+  "toolchain": {
+    "undertale_mod_tool": "0.9.2.0"
+  },
+  "supported_builds": []
+}
