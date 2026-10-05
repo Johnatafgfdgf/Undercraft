@@ -7,5 +7,11 @@
   "toolchain": {
     "undertale_mod_tool": "0.9.2.0"
   },
-  "supported_builds": []
+  "supported_builds": [
+    {
+      "data_win_sha256": "0d0faafe2f0419ac890b0049c3e3e26cb3558920ebc95a61a67611051fb2f70d",
+      "data_win_size": 56204588,
+      "status": "development-target"
+    }
+  ]
 }
