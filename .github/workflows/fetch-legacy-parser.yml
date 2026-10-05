@@ -1,0 +1,30 @@
+name: Fetch legacy parser
+
+on:
+  push:
+    paths:
+      - ".github/workflows/fetch-legacy-parser.yml"
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout TranslaTale PT-BR source
+        uses: actions/checkout@v4
+        with:
+          repository: rma1994/TranslaTale-ptBr
+          path: translatale
+
+      - name: Collect gmktool
+        run: |
+          mkdir -p artifact
+          cp "translatale/TranslaTale/Resources/gmktool.exe" artifact/gmktool.exe
+          sha256sum artifact/gmktool.exe | tee artifact/SHA256SUMS.txt
+
+      - name: Upload parser artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: legacy-gmktool
+          path: artifact/
+          if-no-files-found: error
