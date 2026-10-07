@@ -15,6 +15,11 @@ backups/
 *.bak
 *.tmp
 
+# Local Minecraft assets / generated 2D sprites
+assets/upstream/
+assets/generated/
+minecraft-assets/
+
 # Tool caches
 __pycache__/
 *.pyc
