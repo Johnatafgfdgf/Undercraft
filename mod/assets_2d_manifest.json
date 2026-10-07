@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "runtime_mode": "2d_only",
+  "source_priority": [
+    "Mojang/bedrock-samples",
+    "KygekDev/default-textures"
+  ],
+  "categories": {
+    "blocks": {"mode": "2d_tile", "enabled": true},
+    "items": {"mode": "2d_icon", "enabled": true},
+    "ui": {"mode": "2d_ui", "enabled": true},
+    "particles": {"mode": "2d_animation", "enabled": true},
+    "environment": {"mode": "2d_tile_or_background", "enabled": true},
+    "player": {"mode": "2d_directional_layers", "enabled": true},
+    "entities": {"mode": "2d_directional_sprites", "enabled": true},
+    "armor": {"mode": "2d_overlay", "enabled": true},
+    "structures": {"mode": "2d_room_tiles", "enabled": true}
+  },
+  "forbid_runtime_3d": true,
+  "commit_minecraft_assets": false
+}
