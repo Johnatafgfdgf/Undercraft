@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "player_renderer": {
+    "repository": "minecraft-library/asset-renderer",
+    "pinned_commit": "844f2cae75844ea56494e0b28f294d4797f0cf45",
+    "renderer": "PlayerRenderer",
+    "scope": "FULL",
+    "dimension": "TWO_D",
+    "skin": "minecraft:entity/player/wide/steve",
+    "runtime_3d": false,
+    "supersample_source": 4
+  },
+  "output": {
+    "runtime": "2d_sprite_frames",
+    "directions": ["front", "back", "left", "right"],
+    "states": ["idle", "walk", "jump", "fall", "use", "mine", "eat", "hurt"],
+    "pixel_filter": "nearest",
+    "hand_item_layer": true,
+    "shadow_layer": true
+  },
+  "fallback": {
+    "procedural_steve": false,
+    "legacy_fix6_sprites": false
+  }
+}
